@@ -51,6 +51,14 @@ int main()
 	}
 	
     std::cout << stddev(a) << " " << stddev(v) << "\n";
+    if((stddev(a) == stddev(v)) && (floor(stddev(a)) == 15))
+    {
+		std::cout << "PASSED\n";
+	}
+	else
+	{
+		std::cout << "FAILED\n";
+	}
  
     auto new_a = zscore(a);
     auto new_v = zscore(v);
